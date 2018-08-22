@@ -1,0 +1,22 @@
+body{
+width: 100%;
+height: 5000px;
+/* background-image: url("img/bggold.jpg"); */
+background-color: gold;
+}
+
+ /* navbar  */
+ .navbar{
+   background-color: #000;
+   height: 100px;
+   width: 100%;
+ }
+
+ul{
+  float:left;
+}
+
+.nav-item{
+  color: gold;
+  float: right;
+}
