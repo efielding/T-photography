@@ -1,22 +1,48 @@
 body{
 width: 100%;
 height: 5000px;
-/* background-image: url("img/bggold.jpg"); */
-background-color: gold;
+background-image: url("../img/bg2.jpg");
+background-repeat: no-repeat;
+background-size: contain;
 }
 
  /* navbar  */
  .navbar{
-   background-color: #000;
+   background-color: #0d0d0d;
    height: 100px;
    width: 100%;
+   margin-top: -8px;
+   position: fixed;
+   margin-left: -7px;
  }
 
-ul{
-  float:left;
+.navlist{
+  float: right;
 }
 
 .nav-item{
-  color: gold;
-  float: right;
+  color: #D5BC78;
+  list-style-type: none;
+  float: left;
+  padding: 15px;
+}
+
+.text{
+  /* margin-top: 150px; */
+  width: 40%;
+}
+
+
+
+.image{
+  float: left;
+  width: 40%;
+  border-left: 2px solid #0d0d0d;
+  height: 500px;
+}
+
+/* footer */
+.footer{
+  height: 100px;
+  background: #0d0d0d;
 }
