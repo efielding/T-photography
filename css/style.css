@@ -1,3 +1,6 @@
+@import url("../fonts/glyphicons-halflings-regular.woff");
+
+
 body{
 width: 100%;
 height: 5000px;
@@ -6,41 +9,43 @@ background-repeat: no-repeat;
 background-size: contain;
 }
 
- /* navbar  */
- .navbar{
-   background-color: #0d0d0d;
-   height: 100px;
-   width: 100%;
-   margin-top: -8px;
-   position: fixed;
-   margin-left: -7px;
- }
-
-.navlist{
-  float: right;
+.jumbotron{
+  height: 300px;
+  background: #0d0d0d;
 }
 
-.nav-item{
-  color: #D5BC78;
-  list-style-type: none;
+.jumboborder{
+  border: 2px solid #D5BC78;
+  height: 200px;
+  width: 90%;
+}
+
+.jumbotext{
+  text-align: center;
+  font-size: 80px;
+  color: #d5bc78;
+  margin-top: 40px;
+}
+
+.item{
+  height: 540px;
+  border-radius: 50%;
+}
+/* .left-arrow{
+  font-size: 80px;
+  color: #0d0d0d;
+  margin-top: 235px;
+} */
+.menu{
+  height: 640px;
+  width: 960px;
+}
+
+/* .right-arrow{
   float: left;
-  padding: 15px;
-}
-
-.text{
-  /* margin-top: 150px; */
-  width: 40%;
-}
-
-
-
-.image{
-  float: left;
-  width: 40%;
-  border-left: 2px solid #0d0d0d;
-  height: 500px;
-}
-
+  font-size: 80px;
+  margin-top: 235px;
+} */
 /* footer */
 .footer{
   height: 100px;
