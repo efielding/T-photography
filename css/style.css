@@ -1,21 +1,25 @@
 @import url("../fonts/glyphicons-halflings-regular.woff");
 
-
+ :root{
+   --black: #0d0d0d;
+   --gold: #d5bc78;
+ }
 body{
-width: 100%;
-height: 5000px;
+width: 100vw;
+height: 100vh;
 background-image: url("../img/bg2.jpg");
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
+color: var(--gold);
 }
 
 .jumbotron{
   height: 300px;
-  background: #0d0d0d;
+  background: var(--black);
 }
 
 .jumboborder{
-  border: 2px solid #D5BC78;
+  border: 2px solid var(--gold);
   height: 200px;
   width: 90%;
 }
@@ -23,31 +27,113 @@ background-size: contain;
 .jumbotext{
   text-align: center;
   font-size: 80px;
-  color: #d5bc78;
+  color: var(--gold);
   margin-top: 40px;
 }
 
-.item{
-  height: 540px;
-  border-radius: 50%;
-}
-/* .left-arrow{
-  font-size: 80px;
-  color: #0d0d0d;
-  margin-top: 235px;
-} */
-.menu{
-  height: 640px;
-  width: 960px;
+/* NAV */
+.navbar {
+  background-color: var(--black);
+  color: var(--gold);
+  font-weight: 700;
 }
 
-/* .right-arrow{
-  float: left;
-  font-size: 80px;
-  margin-top: 235px;
-} */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+background-color: var(--black);
+font-weight: bold;
+}
+
+.nav-tabs>li>a{
+  background-color: var(--gold);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.nav-tabs {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--black);
+  border: none;
+}
+
+/* burger menu */
+.container-nav {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 5px;
+    background-color: var(--gold);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* end buger menu */
+
+/* carousel */
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.item {
+  height: 590px;
+
+}
+
+/* gallery */
+
+
+.well{
+width: 300px;
+height:300px;
+margin:10px;
+/* opacity: .01; */
+background-color: rgba(0,0,0,0);
+color: var(--black);
+border: none;
+}
+
+
 /* footer */
 .footer{
   height: 100px;
-  background: #0d0d0d;
+  background: var(--black);
+  font-size: x-large;
+}
+
+.fab {
+  background-color: var(--gold);
+  color: var(--black);
+  margin: 27px;
+}
+
+.fa-instagram {
+  margin-left: 0px;
+}
+
+.location, .number {
+  margin-top: 27px;
+}
+
+/* media */
+@media screen and (max-width: 1109px) {
+  .jumbotext{
+    font-size: 40px;}
+
+  .jumboborder{
+     border-bottom: 2px solid var(--gold);
+     width: 100%; }
 }
