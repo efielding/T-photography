@@ -8,7 +8,7 @@ body{
 width: 100vw;
 height: 100vh;
 background-image: url("../img/bg2.jpg");
-background-repeat: no-repeat;
+background-repeat: repeat;
 background-size: cover;
 color: var(--gold);
 }
@@ -96,16 +96,25 @@ font-weight: bold;
 /* gallery */
 
 
+
 .well{
 width: 300px;
 height:300px;
-margin:10px;
-/* opacity: .01; */
+margin-left: 44px;
 background-color: rgba(0,0,0,0);
 color: var(--black);
 border: none;
 }
 
+.thumbnail{
+  height: 160px;
+  width:250px;
+}
+
+.thumbnail2{
+  height: 290px;
+  width: 250px;
+}
 
 /* footer */
 .footer{
